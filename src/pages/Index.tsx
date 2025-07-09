@@ -103,7 +103,7 @@ const Index = () => {
               <h1 className="text-4xl font-bold flex items-center gap-3">
                 <Tv className="w-10 h-10" />
                 Doramas da Siu
-                <Heart className="w-8 h-8 text-pink-300" />
+                <Heart className="w-8 h-8 text-white" />
               </h1>
               <p className="text-xl text-white/90 mt-2">
                 Organize e acompanhe seus doramas favoritos
