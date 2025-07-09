@@ -96,7 +96,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-accent-50 via-white to-purple-50">
       {/* Header */}
-      <header className="bg-gradient-to-r from-accent-200 to-purple-200 text-gray-800 shadow-lg">
+      <header className="bg-gradient-to-r from-primary to-purple-600 text-white shadow-lg">
         <div className="container mx-auto px-4 py-8">
           <div className="flex items-center justify-between">
             <div>
@@ -104,7 +104,7 @@ const Index = () => {
                 <Tv className="w-10 h-10" />
                 Doramas da Siu
               </h1>
-              <p className="text-xl text-gray-700 mt-2">
+              <p className="text-xl text-white/90 mt-2">
                 Organize e acompanhe seus doramas favoritos
               </p>
             </div>
