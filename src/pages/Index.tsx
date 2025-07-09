@@ -5,7 +5,7 @@ import DramaCard from '@/components/DramaCard';
 import DramaForm from '@/components/DramaForm';
 import FilterBar from '@/components/FilterBar';
 import { Button } from '@/components/ui/button';
-import { Plus, Tv, TrendingUp, Eye, Clock, Play } from 'lucide-react';
+import { Plus, Tv, TrendingUp, Eye, Clock, Play, Heart } from 'lucide-react';
 import { toast } from 'sonner';
 
 const Index = () => {
@@ -96,13 +96,14 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-accent-50 via-white to-purple-50">
       {/* Header */}
-      <header className="bg-gradient-to-r from-primary to-purple-600 text-white shadow-lg">
+      <header className="bg-gradient-to-r from-purple-500 to-purple-700 text-white shadow-lg">
         <div className="container mx-auto px-4 py-8">
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-4xl font-bold flex items-center gap-3">
                 <Tv className="w-10 h-10" />
                 Doramas da Siu
+                <Heart className="w-8 h-8 text-pink-300" />
               </h1>
               <p className="text-xl text-white/90 mt-2">
                 Organize e acompanhe seus doramas favoritos
@@ -111,7 +112,7 @@ const Index = () => {
             <Button
               onClick={() => setIsFormOpen(true)}
               size="lg"
-              className="bg-white text-primary hover:bg-gray-100 font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
+              className="bg-white text-purple-600 hover:bg-gray-100 font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
             >
               <Plus className="w-5 h-5 mr-2" />
               Adicionar Dorama
@@ -201,7 +202,7 @@ const Index = () => {
               {dramas.length === 0 && (
                 <Button
                   onClick={() => setIsFormOpen(true)}
-                  className="bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-600/90 text-white"
+                  className="bg-gradient-to-r from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800 text-white"
                 >
                   <Plus className="w-5 h-5 mr-2" />
                   Adicionar Primeiro Dorama
